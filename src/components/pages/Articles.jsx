@@ -18,7 +18,7 @@ export const Articles = () => {
     
     const {data, cargando} = await Peticion(Global.url+"articles", "GET");
 
-    if (data.status === "succes") {
+    if (data.status === "success") {
       setArticles(data.articles);
     }
 
