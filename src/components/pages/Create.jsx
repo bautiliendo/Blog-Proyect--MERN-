@@ -20,7 +20,7 @@ export const Create = () => {
     } else {
       setResult("error");
     }
-    //Subir img
+    
     const fileInput = document.querySelector("#file");
     if (data.status === "success" && fileInput.files[0]) {
       setResult("saved");
@@ -28,7 +28,6 @@ export const Create = () => {
       const formData = new FormData();
       formData.append("file0", fileInput.files[0]);
 
-      //const subida
       const uploadResponse = await Peticion(Global.url + "upload-img/" + data.article._id,"POST",formData,true);
       if (uploadResponse.data.status === "success") {
         setResult("saved");
