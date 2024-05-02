@@ -8,6 +8,8 @@ import { Sidebar } from "../components/layout/Sidebar";
 import { Footer } from "../components/layout/Footer";
 import { Create } from "../components/pages/Create";
 import { Search } from "../components/pages/Search";
+import { Article } from "../components/pages/Article";
+import { Edit } from "../components/pages/Edit";
 
 export const Rutas = () => {
 
@@ -24,6 +26,8 @@ export const Rutas = () => {
             <Route path="/articles" element={<Articles/>} />
             <Route path="/create-articles" element={<Create/>} />
             <Route path="/search/:busqueda" element={<Search/>} />
+            <Route path="/article/:id" element={<Article/>} />
+            <Route path="/edit/:id" element={<Edit/>} />
 
             <Route path="*" element={
               <div>

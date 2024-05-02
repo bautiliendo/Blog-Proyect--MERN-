@@ -21,6 +21,7 @@ body {
       "footer footer footer footer"
   ;
   grid-template-rows: 100px 100px auto 70px;
+  grid-template-columns: 1fr 1fr 1fr 25%;
 }
 
 .header {
@@ -106,7 +107,13 @@ list-style: none;
 .articulo-item h3{
   font-size: 30px;
 }
-
+.articulo-item h3 a{
+  text-decoration: none;
+  color: black;
+}
+.articulo-item h3 a:hover{
+  color: rgb(3, 74, 227);
+}
 
 .jumbo{
   width: 85%;
@@ -126,12 +133,21 @@ list-style: none;
   display: block;
   margin-bottom: 40px;
 }
-
+.jumbo .mascara{
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+.form-group .mascara{
+  width: 250px;
+  margin: 5px;
+}
 
 .button,
 button,
 input[type="submit"],
-input[type="button"]{
+input[type="button"],
+.edit{
   text-decoration: none;
   width: 100px;
   background:  #0b70e1;
